@@ -1,0 +1,12 @@
+(subdir
+ node_modules
+ (dirs reason-react)
+ (vendored_dirs reason-react)
+ (subdir
+  reason-react/src
+  (include_subdirs unqualified)
+  (library
+   (name reason_react)
+   (wrapped false)
+   (melange.compile_flags :standard -bs-jsx 3)
+   (modes melange))))
